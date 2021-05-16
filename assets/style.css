@@ -1,0 +1,52 @@
+.loo {
+  width: 50px;
+}
+iframe{
+  width:100%;
+  height:26em;
+  border:none;
+  overflow-y: auto;
+}
+.cp {
+  color: purple;
+  border-color: purple;
+  fill: purple;
+  stroke: purple;
+}
+nav{
+  background-blend-mode: luminosity;
+}
+
+p {
+  font-size: small;
+}
+
+footer {
+  background: purple;
+  color: white;
+}
+.card{
+  margin-top:10%;
+}
+#overdis{
+  display:none;
+}
+@media (min-width:700px) {
+  #inp1{
+    width:80vh;
+  }
+}
+svg:hover{
+  cursor: pointer;
+  width:1.5em;
+  stroke:black;
+}
+a{
+  color:white;
+  text-decoration: none;
+  font-size:small;
+  cursor: pointer;
+}
+a:hover{
+  color: yellow;
+}

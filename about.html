@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Paanda widows,orphansand elderly programme
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/jquery.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="./assets/loo.jpeg" alt="PWEP" class="navbar-brand img-fluid loo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <a class="nav-link" aria-current="page" href="#"> Support</a>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+    </nav>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Support us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <table class="table table-hover">
+                            <dt>Please Choose any of the method</dt>
+                            <caption>Please first Contact us in any of the above ways,we recomend contacting us before
+                                doing any support for security and to get uptodate information</caption>
+                            <tr>
+                                <td>Email</td>
+                                <td>paandawidows.org@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <td>Facebook</td>
+                                <td>Paanda-Widow-Elderly-Programme</td>
+                            </tr>
+                            <tr>
+                                <td>Twitter</td>
+                                <td>@Anda</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>+256 123456789</td>
+                            </tr>
+                            <tr>
+                                <td>Whatsapp</td>
+                                <td>+256 123456789</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Location
+                                </td>
+                                <td>Bweyale-kiryandongo Uganda</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="https://main-pwep-ldhnayhlcqhu1y2u-gtw.qovery.io/message" class="form" method="POST"
+                        onsubmit="formsub()">
+                        <div class="row">
+                            <div class="col-11">
+                                <label>
+                                    <h6>Name</h6>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text" placeholder="John Doe" name="name" />
+                                    </div>
+                                </label>
+                                <label>
+                                    <h6>Email</h6>
+                                    <div class="form-group">
+                                        <input class="form-control" type="email" placeholder="youremail@gmail.com"
+                                            name="email" />
+                                        <input type="text" name="datep" id="datep" class="d-none" />
+                                    </div>
+                                </label>
+                                <label>
+                                    <h6>Phone</h6>
+                                    <div class="form-group">
+                                        <input class="form-control" type="tel" placeholder="+1 234567890"
+                                            name="phone" />
+
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="col-11">
+                                <label>
+                                    <h6>Subject</h6>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="your reason"
+                                            name="subject" />
+                                    </div>
+                                </label>
+                                <label>
+                                    <h6>Message</h6>
+                                    <div class="form-group">
+                                        <textarea type="text" rows="2" class="form-control" placeholder="Message"
+                                            name="message"></textarea>
+                                    </div>
+                                </label>
+                            </div></br></br>
+                            <div class="row  pt-2">
+                                <div class="col-1">
+                                    <a
+                                        href="https://m.facebook.com/Paanda-Widow-Elderly-Programme-PWEP-1804933069573782/?__tn__=C-R"><span
+                                            class="fa fa-facebook"></span></a>
+                                </div>
+                                <div class="col-1">
+                                    <div style="width:25px">
+                                        <a href="https://twitter.com/Andprogramme"><span
+                                                class="fa fa-twitter"></span></a>
+                                    </div>
+                                </div>
+                                <div class="col-1">
+                                    <a href="mailto:paandawidows.org@gmail.com"><span class="fa fa-envelope"></span></a>
+                                </div>
+                                <div class="col-6">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-lg-6">
+            <img class="img-fluid" src="./assets/loo.jpeg" alt="profile" />
+        </div>
+        <div class="col-12 col-lg-6 ">
+            <div class="test" style="margin-top:35%;margin-right:10%;margin-left:5%;">
+                <h5 style="color:purple">Panda</h5>
+                <p style="color:blue;font-size:x-large">Panda widows, orphans and elderly programme is a programme
+                    to support the vulnerable needy</p>
+                <button class="btn" style="color:blue;border:2px solid blue;background:white;margin-top:5%;"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">SUPPORT
+                    US</button>
+            </div>
+        </div>
+    </div>
+    </br>
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h4 class="card-title">Goal</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text">To Transform the widows,Orphans and Elderly people life &
+                                        change some of the Negative tradition practices</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h4 class="card-title">Vision</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text">Cater for widpws, Orphans and Elderly people a long
+                                        life,Dignity and Peaceful Death Through financial, economic and Spiritual
+                                        support</p>
+                                </li>
+                                <li>
+                                    <p class="card-text">To positively change/transform the saddened & suffering life of
+                                        the widows, Orphans and Elders to Embrance long life,Dignity and peaceful Death
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h4 class="card-title">Mission</h4>
+                            <ul>
+                                <li>
+                                    <p class="card-text">To help set the widows, Orpans and elderly people free from
+                                        saddened & suffering life to Embrance long life . Dignity and peaceful death</p>
+                                </li>
+                                <li>
+                                    <p class="card-text">To initiate programs and empower widows , Orphans and elderly
+                                        people spiritually,socially and economically.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table table-striped table-bordered">
+            <dt>NEEDS TO BE MET BY PAANDA WIDOWS AND ELDERLY GROUP AND THE BENEFICIES</dt>
+            <tr>
+                <th>S/N</th>
+                <th>TARGETED BENEFICIARIES</th>
+                <th>NEEDS TO BE MET FOR</th>
+                </th>
+            <tr>
+                <td>1</td>
+                <td>Widows</td>
+                <td>Food,Shelta,Health,Spiritual counseling and vocational tainings for Them</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Elderly people</td>
+                <td>Food,Shelta,Health and financial support</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Orphans</td>
+                <td>Food,Shelta,Health and Education support</td>
+            </tr>
+        </table>
+    </div>
+    <footer style="background:purple;color:white" class="p-3 mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <h6>PAANDA</h6>
+                    <p>We are all equal</p>
+                    <p><i>bweyale, Kiryandongo</i></p>
+                    <p>&copy 2021 PAANDA</p>
+                </div>
+                <div class="col-3">
+                    <h6>Links</h6>
+                    <a href="/index.html">Home</a><br />
+                    <a href="#">About</a><br />
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal2">Contact</a><br />
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal">Support</a>
+
+                </div>
+                <div class="col-3">
+                    <h6>Social</h6>
+                    <table>
+                        <tr>
+                            <td><span class="fa fa-phone"></span><a href="tel:+256777236033"> +256 777236033</a></td>
+                        <tr>
+                            <td><span class="fa fa-envelope"></span><a href="mailto:paanda@gmail.com"
+                                    class="border-none">
+                                    paanda@gmail.com</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="fa fa-facebook"></span><a href="https://facebook.com/paanda">PWEP</a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="fa fa-twitter"></span><a href="https://twitter.com/paanda">PWEP</a></td>
+                        </tr>
+
+                    </table>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
