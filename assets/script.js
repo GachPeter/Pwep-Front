@@ -25,11 +25,14 @@ function arrangeDocs(params) {
     params.forEach(post => {
         var pd = post.time;
         if (post.show == 'off') {
-            document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + "<div class='card'>  <div class='card-body'><div class='card-content'><div class='mb-1 text-muted'>" + pd + "</div> <h5 class='card-title'>" + post.title + "</h5><p class='card-text'>" + post.content + "</p></div></div></div>"
+            document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + "<div class='card'>  <div class='card-body'><div class='card-content'><div class='mb-1 text-muted'>" + pd + "</div> <h5 class='card-title'>" + post.title + "</h5><p class='card-text'>" + post.content + "</p></div></div></div>";
+            alert('on');
 
         }
         else if (post.show == 'on') {
-            document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + "<div class='card'> <img src='https://main-pwep-ldhnayhlcqhu1y2u-gtw.qovery.io/posts/uploads/" + post.img + "' alt='Inspire' class='img-fluid'> <div class='card-body'><div class='card-content'><div class='mb-1 text-muted'>" + pd + "</div> <h5 class='card-title'>" + post.title + "</h5><p class='card-text'>" + post.content + "</p></div></div></div>"
+            document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + "<div class='card'> <img src='https://main-pwep-ldhnayhlcqhu1y2u-gtw.qovery.io/posts/uploads/" + post.img + "' alt='Inspire' class='img-fluid'> <div class='card-body'><div class='card-content'><div class='mb-1 text-muted'>" + pd + "</div> <h5 class='card-title'>" + post.title + "</h5><p class='card-text'>" + post.content + "</p></div></div></div>";
+            
+            alert('off);
 
         }
     });
