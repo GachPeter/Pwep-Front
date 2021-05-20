@@ -3,6 +3,7 @@ var ccard = document.getElementById("card");
 var ctitle = document.getElementById("title");
 var ctext = document.getElementById("text");
 var cimg = document.getElementById("img");
+alert('linked');
 
 ccard.style.display = "none";
 function loadDoc() {
