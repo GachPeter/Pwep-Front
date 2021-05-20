@@ -22,6 +22,7 @@ function loadDoc() {
 }
 
 function arrangeDocs(params) {
+    alert('step 2');
     params.forEach(post => {
         var pd = post.time;
         if (post.show == 'off') {
