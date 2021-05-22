@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="./assets/bootstrap-4.0.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.css">
-    <script src="https://raw.githubusercontent.com/GachPeter/Pwep-Front/main/assets/script.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./assets/bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
 </head>
@@ -226,7 +225,51 @@
             </figure>
           </div>
     </div>
+<script>
+loadDoc()
+var ccard = document.getElementById("card");
+var ctitle = document.getElementById("title");
+var ctext = document.getElementById("text");
+var cimg = document.getElementById("img");
 
+
+function loadDoc() {
+    alert("linked");
+    ccard.style.display = "none";
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            posts = JSON.parse(this.response);
+            arrangeDocs(posts);
+
+        }
+    };
+    xhttp.open("GET", "https://main-pwep-ldhnayhlcqhu1y2u-gtw.qovery.io/posts", true);
+    xhttp.send();
+}
+
+function arrangeDocs(params) {
+    params.forEach(post => {
+        var pd = post.time;
+        if (post.show == 'off') {
+            document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + "<div class='card'>  <div class='card-body'><div class='card-content'><div class='mb-1 text-muted'>" + pd + "</div> <h5 class='card-title'>" + post.title + "</h5><p class='card-text'>" + post.content + "</p></div></div></div>"
+
+        }
+        else if (post.show == 'on') {
+            document.getElementById("test").innerHTML = document.getElementById("test").innerHTML + "<div class='card'> <img src='https://main-pwep-ldhnayhlcqhu1y2u-gtw.qovery.io/posts/uploads/" + post.img + "' alt='Inspire' class='img-fluid'> <div class='card-body'><div class='card-content'><div class='mb-1 text-muted'>" + pd + "</div> <h5 class='card-title'>" + post.title + "</h5><p class='card-text'>" + post.content + "</p></div></div></div>"
+
+        }
+    });
+}
+
+function formsub() {
+    var objf = document.getElementById('datep');
+    dateObj = new Date();
+    CD = dateObj.toDateString()
+    objf.value = CD;
+}
+
+</script>
 </body>
 <footer style="background:purple;color:white" class="p-3 mt-3">
     <div class="container">
