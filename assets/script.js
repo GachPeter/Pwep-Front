@@ -6,6 +6,7 @@ var cimg = document.getElementById("img");
 
 
 function loadDoc() {
+    alert("linked");
     ccard.style.display = "none";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
