@@ -4,10 +4,8 @@ var ctitle = document.getElementById("title");
 var ctext = document.getElementById("text");
 var cimg = document.getElementById("img");
 
-
+ccard.style.display = "none";
 function loadDoc() {
-    alert("linked");
-    ccard.style.display = "none";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
