@@ -1,10 +1,10 @@
 loadDoc()
-var ccard = document.getElementById("card");
 var ctitle = document.getElementById("title");
 var ctext = document.getElementById("text");
 var cimg = document.getElementById("img");
 
 function loadDoc() {
+    var ccard = document.getElementById("card");
     ccard.style.display = "none";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
