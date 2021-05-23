@@ -1,5 +1,3 @@
-loadDoc()
-
 function loadDoc() {
     var ctitle = document.getElementById("title");
 var ctext = document.getElementById("text");
