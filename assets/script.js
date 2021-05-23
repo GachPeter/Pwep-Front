@@ -1,9 +1,4 @@
 function loadDoc() {
-    var ctitle = document.getElementById("title");
-var ctext = document.getElementById("text");
-var cimg = document.getElementById("img");
-    var ccard = document.getElementById("card");
-    ccard.style.display = "none";
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
